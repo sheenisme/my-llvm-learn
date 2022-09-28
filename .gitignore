@@ -5,3 +5,5 @@ build/
 test/*.bc
 test/*.ll
 test/*.s
+
+!test/test_for_reassociate.ll

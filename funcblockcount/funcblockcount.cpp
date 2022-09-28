@@ -31,8 +31,7 @@ namespace
         {
             COUNTER++;
             // errs()是一个LLVM提供的C++输出流，我们可以用它来输出到控制台
-            errs() << "FuncBlockCount pass get the function's name is: ";
-            errs().write_escaped(F.getName()) << ", counter is : " << COUNTER << '\n';
+            errs() << "Function Block Count pass get the function's name is: " << F.getName() << ", numbers of arguments is " << F.arg_size() << ". Now the counter is : " << COUNTER << ". \n";
             // 函数返回false说明它没有改动函数F。之后，如果我们真的变换了程序，我们需要返回一个true。
             return false;
         }

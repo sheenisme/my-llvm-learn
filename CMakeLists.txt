@@ -26,3 +26,4 @@ message("LLVM STATUS:
 
 # 添加Pass的子目录
 add_subdirectory(funcblockcount)
+add_subdirectory(reassociate)
